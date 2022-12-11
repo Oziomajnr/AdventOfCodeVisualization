@@ -21,7 +21,7 @@ import kotlinx.coroutines.flow.onEach
 @Composable
 @Preview
 fun App() {
-    val state = day10.solvePart2().onEach { delay(30) }.collectAsState(ScreenState(emptyList(), 1))
+    val state = solvePart2().onEach { delay(30) }.collectAsState(ScreenState(emptyList(), 1))
     MaterialTheme {
 
         Column {

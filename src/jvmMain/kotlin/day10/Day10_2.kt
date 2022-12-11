@@ -19,14 +19,15 @@ fun solvePart2(): Flow<ScreenState> {
             repeat(it.cycles) {
                 numberOfCycles++
                 val crtIndex = (numberOfCycles - 1) % 40
-                screen[(numberOfCycles - 1) / 40][crtIndex] = if (crtIndex in spritePosition - 1..spritePosition + 1) {
-                    '#'
+                if (crtIndex in spritePosition - 1..spritePosition + 1) {
+                    screen[(numberOfCycles - 1) / 40][crtIndex] = '#'
+                    emit(ScreenState(screen, spritePosition))
                 } else {
-                    '.'
+                    screen[(numberOfCycles - 1) / 40][crtIndex] = '.'
                 }
             }
             spritePosition += it.value
-            emit(ScreenState(screen, spritePosition))
+
         }
     }
 }
