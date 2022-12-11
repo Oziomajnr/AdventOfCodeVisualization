@@ -4,5 +4,5 @@ Visualizations for Advent Of Code Puzzles in Jetpack Compose.
 
 Visualize Advent Of Code Puzzles in Jetpack compose desktop.
 
-![2022 Day 10](https://github.com/Oziomajnr/AdventOfCodeVisualization/blob/main/visualizations/AdventOfCodeDay10Visuals.mp4)
+https://github.com/Oziomajnr/AdventOfCodeVisualization/blob/main/visualizations/AdventOfCodeDay10Visuals.mp4
 
